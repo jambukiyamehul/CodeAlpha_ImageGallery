@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.galleryOverlay {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.galleryOverlayShow{
+    display: block;
+}
+
+.imageBox{
+    width: 50%;
+    height: 60%;
+    left: 25%;
+    top: 20%;
+    transition: 0.5s;
+    transform: scale(0);
+    background-color: white;
+    position: fixed;
+    align-items: center;
+}
+
+.imageBoxShow{
+    transform: scale(1);
+}
+
+.imageBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.imageBox span{
+    position: absolute;
+    right: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 35px;
+
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galleryItems{
+    flex-basis: 23%;
+    margin: 1%;
+}
+
+.galleryItems img{
+    width: 100%;
+    height: 220px;
+}
+
+.imageBox {
+    width: 50%;
+    height: 60%;
+    left: 25%;
+    top: 20%;
+    position: fixed;
+    background: white;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.imageBoxShow {
+    transform: scale(1);
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageBox span {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close {
+    top: 5px;
+    right: 10px;
+    color: black;
+}
+
+.prev {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
